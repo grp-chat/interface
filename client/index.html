@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faster+One&family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Tournament</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>STACKING ROUND ROBIN</h1>
+            <ul>
+                <!-- <li class="current"><a href="index.html">Tournament Board</a></li> -->
+                <!-- <li class="current">Tournament Board</li> -->
+                <li><a class="link" href="points.html" target="_blank">Points</a></li>
+                <li><a href="reference.html" target="_blank">Reference</a></li>
+                
+                
+            </ul>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <div class="board">
+            <!-- <h1 id="p1" style="color: #fe4a49;">P1</h1>
+            <h1 style="color: #2ab7ca;">VS</h1>
+            <h1 id="p2" style="color: #fed766;">P2</h1>
+            <h1 style="color: #2ab7ca;">VS</h1>
+            <h1 id="p3" style="color: gray;">P3</h1> -->
+
+            <div style="background-color: white; width: 250px; height: 500px; display: inline-block; ">
+                <div class="round1" style="background-color: gold; width: 200px; height: 125px;">
+                    <div style="font-size: 25px;">Round 1</div>
+                    <div style="background-color:dodgerblue;">
+                        <div id="r1chs" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div id="r1pwr" style="font-size: 25px;">??</div>
+                        <!-- <div style="font-size: 25px; margin-left: 200px;">W</div> -->
+                    </div>
+    
+                    <div style="background-color: palegreen;">
+                        <div id="r1p2" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div style="font-size: 25px;">--</div>
+                    </div>
+    
+                    <div style="background-color: aqua;">
+                        <div style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">Reward: </div>
+                        <div id="r1rew" style="font-size: 25px;">Rew 1</div>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="round2" style="background-color: gold; width: 200px; height: 125px; margin-top: 20px;">
+                    <div style="font-size: 25px;">Round 2</div>
+                    <div style="background-color:dodgerblue;">
+                        <div id="r2chs" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div id="r2pwr" style="font-size: 25px;">??</div>
+                        <!-- <div style="font-size: 25px; margin-left: 200px;">W</div> -->
+                    </div>
+    
+                    <div style="background-color: palegreen;">
+                        <div id="r2p2" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div style="font-size: 25px;">--</div>
+                    </div>
+    
+                    <div style="background-color: aqua;">
+                        <div style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">Reward: </div>
+                        <div id="r2rew" style="font-size: 25px;">Rew 1</div>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="round3" style="background-color: gold; width: 200px; height: 125px; margin-top: 20px;">
+                    <div style="font-size: 25px;">Round 3</div>
+                    <div style="background-color:dodgerblue;">
+                        <div id="r3chs" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div id="r3pwr" style="font-size: 25px;">??</div>
+                        <!-- <div style="font-size: 25px; margin-left: 200px;">W</div> -->
+                    </div>
+    
+                    <div style="background-color: palegreen;">
+                        <div id="r3p2" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div style="font-size: 25px;">--</div>
+                    </div>
+    
+                    <div style="background-color: aqua;">
+                        <div style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">Reward: </div>
+                        <div id="r3rew" style="font-size: 25px;">Rew 1</div>
+                        
+                    </div>
+                    
+                </div>
+
+
+    
+            </div>
+
+            <div style="background-color: white; width: 250px; height: 500px; display: inline-block; ">
+                <div class="round4" style="background-color: gold; width: 200px; height: 125px;">
+                    <div style="font-size: 25px;">Round 4</div>
+                    <div style="background-color:dodgerblue;">
+                        <div id="r4chs" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div id="r4pwr" style="font-size: 25px;">??</div>
+                        <!-- <div style="font-size: 25px; margin-left: 200px;">W</div> -->
+                    </div>
+    
+                    <div style="background-color: palegreen;">
+                        <div id="r4p2" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div style="font-size: 25px;">--</div>
+                    </div>
+    
+                    <div style="background-color: aqua;">
+                        <div style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">Reward: </div>
+                        <div id="r4rew" style="font-size: 25px;">Rew 1</div>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="round5" style="background-color: gold; width: 200px; height: 125px; margin-top: 20px;">
+                    <div style="font-size: 25px;">Round 5</div>
+                    <div style="background-color:dodgerblue;">
+                        <div id="r5chs" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div id="r5pwr" style="font-size: 25px;">??</div>
+                        <!-- <div style="font-size: 25px; margin-left: 200px;">W</div> -->
+                    </div>
+    
+                    <div style="background-color: palegreen;">
+                        <div id="r5p2" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div style="font-size: 25px;">--</div>
+                    </div>
+    
+                    <div style="background-color: aqua;">
+                        <div style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">Reward: </div>
+                        <div id="r5rew" style="font-size: 25px;">Rew 1</div>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="round6" style="background-color: gold; width: 200px; height: 125px; margin-top: 20px;">
+                    <div style="font-size: 25px;">Round 6</div>
+                    <div style="background-color:dodgerblue;">
+                        <div id="r6chs" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div id="r6pwr" style="font-size: 25px;">??</div>
+                        <!-- <div style="font-size: 25px; margin-left: 200px;">W</div> -->
+                    </div>
+    
+                    <div style="background-color: palegreen;">
+                        <div id="r6p2" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div style="font-size: 25px;">--</div>
+                    </div>
+    
+                    <div style="background-color: aqua;">
+                        <div style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">Reward: </div>
+                        <div id="r6rew" style="font-size: 25px;">Rew 1</div>
+                        
+                    </div>
+                    
+                </div>
+
+
+    
+            </div>
+
+            <div style="background-color: white; width: 250px; height: 500px; display: inline-block; ">
+                <div class="round7" style="background-color: gold; width: 200px; height: 125px;">
+                    <div style="font-size: 25px;">Round 7</div>
+                    <div style="background-color:dodgerblue;">
+                        <div id="r7chs" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div id="r7pwr" style="font-size: 25px;">??</div>
+                        <!-- <div style="font-size: 25px; margin-left: 200px;">W</div> -->
+                    </div>
+    
+                    <div style="background-color: palegreen;">
+                        <div id="r7p2" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div style="font-size: 25px;">--</div>
+                    </div>
+    
+                    <div style="background-color: aqua;">
+                        <div style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">Reward: </div>
+                        <div id="r7rew" style="font-size: 25px;">Rew 1</div>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="round8" style="background-color: gold; width: 200px; height: 125px; margin-top: 20px;">
+                    <div style="font-size: 25px;">Round 8</div>
+                    <div style="background-color:dodgerblue;">
+                        <div id="r8chs" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div id="r8pwr" style="font-size: 25px;">??</div>
+                        <!-- <div style="font-size: 25px; margin-left: 200px;">W</div> -->
+                    </div>
+    
+                    <div style="background-color: palegreen;">
+                        <div id="r8p2" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div style="font-size: 25px;">--</div>
+                    </div>
+    
+                    <div style="background-color: aqua;">
+                        <div style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">Reward: </div>
+                        <div id="r8rew" style="font-size: 25px;">Rew 1</div>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="round9" style="background-color: gold; width: 200px; height: 125px; margin-top: 20px;">
+                    <div style="font-size: 25px;">Round 9</div>
+                    <div style="background-color:dodgerblue;">
+                        <div id="r9chs" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div id="r9pwr" style="font-size: 25px;">??</div>
+                        <!-- <div style="font-size: 25px; margin-left: 200px;">W</div> -->
+                    </div>
+    
+                    <div style="background-color: palegreen;">
+                        <div id="r9p2" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div style="font-size: 25px;">--</div>
+                    </div>
+    
+                    <div style="background-color: aqua;">
+                        <div style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">Reward: </div>
+                        <div id="r9rew" style="font-size: 25px;">Rew 1</div>
+                        
+                    </div>
+                    
+                </div>
+
+
+    
+            </div>
+
+            <div style="background-color: white; width: 250px; height: 500px; display: inline-block; ">
+                <div class="round10" style="background-color: gold; width: 200px; height: 125px;">
+                    <div style="font-size: 25px;">Round 10</div>
+                    <div style="background-color:dodgerblue;">
+                        <div id="r10chs" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div id="r10pwr" style="font-size: 25px;">??</div>
+                        <!-- <div style="font-size: 25px; margin-left: 200px;">W</div> -->
+                    </div>
+    
+                    <div style="background-color: palegreen;">
+                        <div id="r10p2" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div style="font-size: 25px;">--</div>
+                    </div>
+    
+                    <div style="background-color: aqua;">
+                        <div style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">Reward: </div>
+                        <div id="r10rew" style="font-size: 25px;">Rew 1</div>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="round11" style="background-color: gold; width: 200px; height: 125px; margin-top: 20px;">
+                    <div style="font-size: 25px;">Round 11</div>
+                    <div style="background-color:dodgerblue;">
+                        <div id="r11chs" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div id="r11pwr" style="font-size: 25px;">??</div>
+                        <!-- <div style="font-size: 25px; margin-left: 200px;">W</div> -->
+                    </div>
+    
+                    <div style="background-color: palegreen;">
+                        <div id="r11p2" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div style="font-size: 25px;">--</div>
+                    </div>
+    
+                    <div style="background-color: aqua;">
+                        <div style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">Reward: </div>
+                        <div id="r11rew" style="font-size: 25px;">Rew 1</div>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="round12" style="background-color: gold; width: 200px; height: 125px; margin-top: 20px;">
+                    <div style="font-size: 25px;">Round 12</div>
+                    <div style="background-color:dodgerblue;">
+                        <div id="r12chs" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div id="r12pwr" style="font-size: 25px;">??</div>
+                        <!-- <div style="font-size: 25px; margin-left: 200px;">W</div> -->
+                    </div>
+    
+                    <div style="background-color: palegreen;">
+                        <div id="r12p2" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div style="font-size: 25px;">--</div>
+                    </div>
+    
+                    <div style="background-color: aqua;">
+                        <div style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">Reward: </div>
+                        <div id="r12rew" style="font-size: 25px;">Rew 1</div>
+                        
+                    </div>
+                    
+                </div>
+
+
+    
+            </div>
+
+            <div style="background-color: white; width: 250px; height: 500px; display: inline-block; ">
+                <div class="round13" style="background-color: gold; width: 200px; height: 125px;">
+                    <div style="font-size: 25px;">Round 13</div>
+                    <div style="background-color:dodgerblue;">
+                        <div id="r13chs" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div id="r13pwr" style="font-size: 25px;">??</div>
+                        <!-- <div style="font-size: 25px; margin-left: 200px;">W</div> -->
+                    </div>
+    
+                    <div style="background-color: palegreen;">
+                        <div id="r13p2" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div style="font-size: 25px;">--</div>
+                    </div>
+    
+                    <div style="background-color: aqua;">
+                        <div style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">Reward: </div>
+                        <div id="r13rew" style="font-size: 25px;">Rew 1</div>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="round14" style="background-color: gold; width: 200px; height: 125px; margin-top: 20px;">
+                    <div style="font-size: 25px;">Round 14</div>
+                    <div style="background-color:dodgerblue;">
+                        <div id="r14chs" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div id="r14pwr" style="font-size: 25px;">??</div>
+                        <!-- <div style="font-size: 25px; margin-left: 200px;">W</div> -->
+                    </div>
+    
+                    <div style="background-color: palegreen;">
+                        <div id="r14p2" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div style="font-size: 25px;">--</div>
+                    </div>
+    
+                    <div style="background-color: aqua;">
+                        <div style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">Reward: </div>
+                        <div id="r14rew" style="font-size: 25px;">Rew 1</div>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="round15" style="background-color: gold; width: 200px; height: 125px; margin-top: 20px;">
+                    <div style="font-size: 25px;">Round 15</div>
+                    <div style="background-color:dodgerblue;">
+                        <div id="r15chs" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div id="r15pwr" style="font-size: 25px;">??</div>
+                        <!-- <div style="font-size: 25px; margin-left: 200px;">W</div> -->
+                    </div>
+    
+                    <div style="background-color: palegreen;">
+                        <div id="r15p2" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div style="font-size: 25px;">--</div>
+                    </div>
+    
+                    <div style="background-color: aqua;">
+                        <div style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">Reward: </div>
+                        <div id="r15rew" style="font-size: 25px;">Rew 1</div>
+                        
+                    </div>
+                    
+                </div>
+
+
+    
+            </div>
+
+            <div style="background-color: white; width: 250px; height: 500px; display: inline-block; ">
+                <div class="round16" style="background-color: gold; width: 200px; height: 125px;">
+                    <div style="font-size: 25px;">Round 16</div>
+                    <div style="background-color:dodgerblue;">
+                        <div id="r16chs" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div id="r16pwr" style="font-size: 25px;">??</div>
+                        <!-- <div style="font-size: 25px; margin-left: 200px;">W</div> -->
+                    </div>
+    
+                    <div style="background-color: palegreen;">
+                        <div id="r16p2" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div style="font-size: 25px;">--</div>
+                    </div>
+    
+                    <div style="background-color: aqua;">
+                        <div style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">Reward: </div>
+                        <div id="r16rew" style="font-size: 25px;">Rew 1</div>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="round17" style="background-color: gold; width: 200px; height: 125px; margin-top: 20px;">
+                    <div style="font-size: 25px;">Round 17</div>
+                    <div style="background-color:dodgerblue;">
+                        <div id="r17chs" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div id="r17pwr" style="font-size: 25px;">??</div>
+                        <!-- <div style="font-size: 25px; margin-left: 200px;">W</div> -->
+                    </div>
+    
+                    <div style="background-color: palegreen;">
+                        <div id="r17p2" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div style="font-size: 25px;">--</div>
+                    </div>
+    
+                    <div style="background-color: aqua;">
+                        <div style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">Reward: </div>
+                        <div id="r17rew" style="font-size: 25px;">Rew 1</div>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="round18" style="background-color: gold; width: 200px; height: 125px; margin-top: 20px;">
+                    <div style="font-size: 25px;">Round 18</div>
+                    <div style="background-color:dodgerblue;">
+                        <div id="r18chs" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div id="r18pwr" style="font-size: 25px;">??</div>
+                        <!-- <div style="font-size: 25px; margin-left: 200px;">W</div> -->
+                    </div>
+    
+                    <div style="background-color: palegreen;">
+                        <div id="r18p2" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div style="font-size: 25px;">--</div>
+                    </div>
+    
+                    <div style="background-color: aqua;">
+                        <div style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">Reward: </div>
+                        <div id="r18rew" style="font-size: 25px;">Rew 1</div>
+                        
+                    </div>
+                    
+                </div>
+
+
+    
+            </div>
+
+            <div style="background-color: white; width: 250px; height: 500px; display: inline-block; ">
+                <div class="round19" style="background-color: gold; width: 200px; height: 125px;">
+                    <div style="font-size: 25px;">Round 19</div>
+                    <div style="background-color:dodgerblue;">
+                        <div id="r19chs" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div id="r19pwr" style="font-size: 25px;">??</div>
+                        <!-- <div style="font-size: 25px; margin-left: 200px;">W</div> -->
+                    </div>
+    
+                    <div style="background-color: palegreen;">
+                        <div id="r19p2" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div style="font-size: 25px;">--</div>
+                    </div>
+    
+                    <div style="background-color: aqua;">
+                        <div style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">Reward: </div>
+                        <div id="r19rew" style="font-size: 25px;">Rew 1</div>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="round20" style="background-color: gold; width: 200px; height: 125px; margin-top: 20px;">
+                    <div style="font-size: 25px;">Round 20</div>
+                    <div style="background-color:dodgerblue;">
+                        <div id="r20chs" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div id="r20pwr" style="font-size: 25px;">??</div>
+                        <!-- <div style="font-size: 25px; margin-left: 200px;">W</div> -->
+                    </div>
+    
+                    <div style="background-color: palegreen;">
+                        <div id="r20p2" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div style="font-size: 25px;">--</div>
+                    </div>
+    
+                    <div style="background-color: aqua;">
+                        <div style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">Reward: </div>
+                        <div id="r20rew" style="font-size: 25px;">Rew 1</div>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="round21" style="background-color: gold; width: 200px; height: 125px; margin-top: 20px;">
+                    <div style="font-size: 25px;">Round 21</div>
+                    <div style="background-color:dodgerblue;">
+                        <div id="r21chs" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div id="r21pwr" style="font-size: 25px;">??</div>
+                        <!-- <div style="font-size: 25px; margin-left: 200px;">W</div> -->
+                    </div>
+    
+                    <div style="background-color: palegreen;">
+                        <div id="r21p2" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div style="font-size: 25px;">--</div>
+                    </div>
+    
+                    <div style="background-color: aqua;">
+                        <div style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">Reward: </div>
+                        <div id="r21rew" style="font-size: 25px;">Rew 1</div>
+                        
+                    </div>
+                    
+                </div>
+
+
+    
+            </div>
+
+            <div style="background-color: white; width: 250px; height: 500px; display: inline-block; ">
+                <div class="round22" style="background-color: gold; width: 200px; height: 125px;">
+                    <div style="font-size: 25px;">Round 22</div>
+                    <div style="background-color:dodgerblue;">
+                        <div id="r22chs" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div id="r22pwr" style="font-size: 25px;">??</div>
+                        <!-- <div style="font-size: 25px; margin-left: 200px;">W</div> -->
+                    </div>
+    
+                    <div style="background-color: palegreen;">
+                        <div id="r22p2" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div style="font-size: 25px;">--</div>
+                    </div>
+    
+                    <div style="background-color: aqua;">
+                        <div style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">Reward: </div>
+                        <div id="r22rew" style="font-size: 25px;">Rew 1</div>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="round23" style="background-color: gold; width: 200px; height: 125px; margin-top: 20px;">
+                    <div style="font-size: 25px;">Round 23</div>
+                    <div style="background-color:dodgerblue;">
+                        <div id="r23chs" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div id="r23pwr" style="font-size: 25px;">??</div>
+                        <!-- <div style="font-size: 25px; margin-left: 200px;">W</div> -->
+                    </div>
+    
+                    <div style="background-color: palegreen;">
+                        <div id="r23p2" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div style="font-size: 25px;">--</div>
+                    </div>
+    
+                    <div style="background-color: aqua;">
+                        <div style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">Reward: </div>
+                        <div id="r23rew" style="font-size: 25px;">Rew 1</div>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="round24" style="background-color: gold; width: 200px; height: 125px; margin-top: 20px;">
+                    <div style="font-size: 25px;">Round 24</div>
+                    <div style="background-color:dodgerblue;">
+                        <div id="r24chs" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div id="r24pwr" style="font-size: 25px;">??</div>
+                        <!-- <div style="font-size: 25px; margin-left: 200px;">W</div> -->
+                    </div>
+    
+                    <div style="background-color: palegreen;">
+                        <div id="r24p2" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div style="font-size: 25px;">--</div>
+                    </div>
+    
+                    <div style="background-color: aqua;">
+                        <div style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">Reward: </div>
+                        <div id="r24rew" style="font-size: 25px;">Rew 1</div>
+                        
+                    </div>
+                    
+                </div>
+
+
+    
+            </div>
+
+            <div style="background-color: white; width: 250px; height: 500px; display: inline-block; ">
+                <div class="round25" style="background-color: gold; width: 200px; height: 125px;">
+                    <div style="font-size: 25px;">Round 25</div>
+                    <div style="background-color:dodgerblue;">
+                        <div id="r25chs" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div id="r25pwr" style="font-size: 25px;">??</div>
+                        <!-- <div style="font-size: 25px; margin-left: 200px;">W</div> -->
+                    </div>
+    
+                    <div style="background-color: palegreen;">
+                        <div id="r25p2" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div style="font-size: 25px;">--</div>
+                    </div>
+    
+                    <div style="background-color: aqua;">
+                        <div style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">Reward: </div>
+                        <div id="r25rew" style="font-size: 25px;">Rew 1</div>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="round26" style="background-color: gold; width: 200px; height: 125px; margin-top: 20px;">
+                    <div style="font-size: 25px;">Round 26</div>
+                    <div style="background-color:dodgerblue;">
+                        <div id="r26chs" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div id="r26pwr" style="font-size: 25px;">??</div>
+                        <!-- <div style="font-size: 25px; margin-left: 200px;">W</div> -->
+                    </div>
+    
+                    <div style="background-color: palegreen;">
+                        <div id="r26p2" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div style="font-size: 25px;">--</div>
+                    </div>
+    
+                    <div style="background-color: aqua;">
+                        <div style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">Reward: </div>
+                        <div id="r26rew" style="font-size: 25px;">Rew 1</div>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="round27" style="background-color: gold; width: 200px; height: 125px; margin-top: 20px;">
+                    <div style="font-size: 25px;">Round 27</div>
+                    <div style="background-color:dodgerblue;">
+                        <div id="r27chs" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div id="r27pwr" style="font-size: 25px;">??</div>
+                        <!-- <div style="font-size: 25px; margin-left: 200px;">W</div> -->
+                    </div>
+    
+                    <div style="background-color: palegreen;">
+                        <div id="r27p2" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div style="font-size: 25px;">--</div>
+                    </div>
+    
+                    <div style="background-color: aqua;">
+                        <div style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">Reward: </div>
+                        <div id="r27rew" style="font-size: 25px;">Rew 1</div>
+                        
+                    </div>
+                    
+                </div>
+
+
+    
+            </div>
+
+            <div style="background-color: white; width: 250px; height: 500px; display: inline-block; ">
+                <div class="round28" style="background-color: gold; width: 200px; height: 125px;">
+                    <div style="font-size: 25px;">Round 28</div>
+                    <div style="background-color:dodgerblue;">
+                        <div id="r28chs" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div id="r28pwr" style="font-size: 25px;">??</div>
+                        <!-- <div style="font-size: 25px; margin-left: 200px;">W</div> -->
+                    </div>
+    
+                    <div style="background-color: palegreen;">
+                        <div id="r28p2" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div style="font-size: 25px;">--</div>
+                    </div>
+    
+                    <div style="background-color: aqua;">
+                        <div style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">Reward: </div>
+                        <div id="r28rew" style="font-size: 25px;">Rew 1</div>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="round29" style="background-color: gold; width: 200px; height: 125px; margin-top: 20px;">
+                    <div style="font-size: 25px;">Round 29</div>
+                    <div style="background-color:dodgerblue;">
+                        <div id="r29chs" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div id="r29pwr" style="font-size: 25px;">??</div>
+                        <!-- <div style="font-size: 25px; margin-left: 200px;">W</div> -->
+                    </div>
+    
+                    <div style="background-color: palegreen;">
+                        <div id="r29p2" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div style="font-size: 25px;">--</div>
+                    </div>
+    
+                    <div style="background-color: aqua;">
+                        <div style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">Reward: </div>
+                        <div id="r29rew" style="font-size: 25px;">Rew 1</div>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="round30" style="background-color: gold; width: 200px; height: 125px; margin-top: 20px;">
+                    <div style="font-size: 25px;">Round 30</div>
+                    <div style="background-color:dodgerblue;">
+                        <div id="r30chs" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div id="r30pwr" style="font-size: 25px;">??</div>
+                        <!-- <div style="font-size: 25px; margin-left: 200px;">W</div> -->
+                    </div>
+    
+                    <div style="background-color: palegreen;">
+                        <div id="r30p2" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div style="font-size: 25px;">--</div>
+                    </div>
+    
+                    <div style="background-color: aqua;">
+                        <div style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">Reward: </div>
+                        <div id="r30rew" style="font-size: 25px;">Rew 1</div>
+                        
+                    </div>
+                    
+                </div>
+
+
+    
+            </div>
+
+            <div style="background-color: white; width: 250px; height: 500px; display: inline-block; ">
+                <div class="round31" style="background-color: gold; width: 200px; height: 125px;">
+                    <div style="font-size: 25px;">Round 31</div>
+                    <div style="background-color:dodgerblue;">
+                        <div id="r31chs" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div id="r31pwr" style="font-size: 25px;">??</div>
+                        <!-- <div style="font-size: 25px; margin-left: 200px;">W</div> -->
+                    </div>
+    
+                    <div style="background-color: palegreen;">
+                        <div id="r31p2" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div style="font-size: 25px;">--</div>
+                    </div>
+    
+                    <div style="background-color: aqua;">
+                        <div style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">Reward: </div>
+                        <div id="r31rew" style="font-size: 25px;">Rew 1</div>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="round32" style="background-color: gold; width: 200px; height: 125px; margin-top: 20px;">
+                    <div style="font-size: 25px;">Round 32</div>
+                    <div style="background-color:dodgerblue;">
+                        <div id="r32chs" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div id="r32pwr" style="font-size: 25px;">??</div>
+                        <!-- <div style="font-size: 25px; margin-left: 200px;">W</div> -->
+                    </div>
+    
+                    <div style="background-color: palegreen;">
+                        <div id="r32p2" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div style="font-size: 25px;">--</div>
+                    </div>
+    
+                    <div style="background-color: aqua;">
+                        <div style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">Reward: </div>
+                        <div id="r32rew" style="font-size: 25px;">Rew 1</div>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="round33" style="background-color: gold; width: 200px; height: 125px; margin-top: 20px;">
+                    <div style="font-size: 25px;">Round 33</div>
+                    <div style="background-color:dodgerblue;">
+                        <div id="r33chs" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div id="r33pwr" style="font-size: 25px;">??</div>
+                        <!-- <div style="font-size: 25px; margin-left: 200px;">W</div> -->
+                    </div>
+    
+                    <div style="background-color: palegreen;">
+                        <div id="r33p2" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div style="font-size: 25px;">--</div>
+                    </div>
+    
+                    <div style="background-color: aqua;">
+                        <div style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">Reward: </div>
+                        <div id="r33rew" style="font-size: 25px;">Rew 1</div>
+                        
+                    </div>
+                    
+                </div>
+
+
+    
+            </div>
+
+            <div style="background-color: white; width: 250px; height: 500px; display: inline-block; ">
+                <div class="round34" style="background-color: gold; width: 200px; height: 125px;">
+                    <div style="font-size: 25px;">Round 34</div>
+                    <div style="background-color:dodgerblue;">
+                        <div id="r34chs" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div id="r34pwr" style="font-size: 25px;">??</div>
+                        <!-- <div style="font-size: 25px; margin-left: 200px;">W</div> -->
+                    </div>
+    
+                    <div style="background-color: palegreen;">
+                        <div id="r34p2" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div style="font-size: 25px;">--</div>
+                    </div>
+    
+                    <div style="background-color: aqua;">
+                        <div style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">Reward: </div>
+                        <div id="r34rew" style="font-size: 25px;">Rew 1</div>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="round35" style="background-color: gold; width: 200px; height: 125px; margin-top: 20px;">
+                    <div style="font-size: 25px;">Round 35</div>
+                    <div style="background-color:dodgerblue;">
+                        <div id="r35chs" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div id="r35pwr" style="font-size: 25px;">??</div>
+                        <!-- <div style="font-size: 25px; margin-left: 200px;">W</div> -->
+                    </div>
+    
+                    <div style="background-color: palegreen;">
+                        <div id="r35p2" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div style="font-size: 25px;">--</div>
+                    </div>
+    
+                    <div style="background-color: aqua;">
+                        <div style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">Reward: </div>
+                        <div id="r35rew" style="font-size: 25px;">Rew 1</div>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="round36" style="background-color: gold; width: 200px; height: 125px; margin-top: 20px;">
+                    <div style="font-size: 25px;">Round 36</div>
+                    <div style="background-color:dodgerblue;">
+                        <div id="r36chs" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div id="r36pwr" style="font-size: 25px;">??</div>
+                        <!-- <div style="font-size: 25px; margin-left: 200px;">W</div> -->
+                    </div>
+    
+                    <div style="background-color: palegreen;">
+                        <div id="r36p2" style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">player 1</div>
+                        <div style="font-size: 25px;">--</div>
+                    </div>
+    
+                    <div style="background-color: aqua;">
+                        <div style="font-size: 25px; float: left; border-right: 5px solid white; padding-right: 5px; width: 103px;">Reward: </div>
+                        <div id="r36rew" style="font-size: 25px;">Rew 1</div>
+                        
+                    </div>
+                    
+                </div>
+
+
+    
+            </div>
+
+            <button class="nextround">Next Round</button>
+        </div>
+        <div class="power-options">
+            <!-- <h4 id="option1">PtsX2</h4> -->
+            <h1 id="option1">--</h1>
+            <h1 id="option2">--</h1>
+            <h1 id="option3">--</h1>
+            <h1 id="option4">--</h1>
+            <h1 id="option5">--</h1>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>
